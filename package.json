@@ -1,0 +1,25 @@
+{
+  "name": "first-task",
+  "version": "1.0.0",
+  "description": "First Task in Visionx",
+  "main": "server.js",
+  "scripts": {
+    "start": "node Server",
+    "server": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Rana-Mudassir"
+  },
+  "author": "Mudassir",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "config": "^3.3.7",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.9"
+  }
+}
