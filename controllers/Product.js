@@ -43,11 +43,12 @@ const getById = async (req, res, next) => {
     const newPrd = async (req, res, next ) => {
 
         try {
-            // console.log(req);
+            console.log(req);
             const obj = {
                 productName : req.body.productName,
                 productDesc : req.body.productDesc,
                 productImageUrl : req.body.productImageUrl,
+                thumbnailUrl : req.body.thumbnailUrl,
                 productPrice : req.body.productPrice,
                 category: req.body.category,
             };
@@ -81,7 +82,8 @@ const getById = async (req, res, next) => {
             let updateData = {
                 productName: req.body.productName,
                 prodductDesc : req.body.prodductDesc,
-                productImage : req.body.productImage,
+                productImageUrl : req.body.productImageUrl,
+                thumnailUrl : req.body.thumnailUrl,
                 productPrice : req.body.productPrice,
 
             }

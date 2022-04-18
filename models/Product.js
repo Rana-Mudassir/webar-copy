@@ -19,6 +19,10 @@ const ProductScehma = new Schema(
         type : String,
         required: true
     },
+    thumbnailUrl: {
+        type: String,
+        required: true
+    },
     productPrice:{
         type: Number,
         required: true
