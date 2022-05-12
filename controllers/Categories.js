@@ -48,6 +48,27 @@ const Categories = require('../models/Categories');
     }
 }
 
+    // Get single Category by ID
+    const getById = async (req, res, next) => {
+        try {
+            let categoryId = await req.params.id;
+            console.log(categoryId)
+            // console.log(req.query.id)
+    
+            const response = await Categories.findById(categoryId);
+            
+            res.json({
+                response
+            });
+        } catch (error) {
+            console.log(error);
+    
+            res.json({
+                message: 'An Error Occured'
+            });
+        }
+    }
+
     module.exports = {
-        categoriesList, newCategorie
+        categoriesList, newCategorie, getById
     }

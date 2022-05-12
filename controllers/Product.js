@@ -119,6 +119,8 @@ const getById = async (req, res, next) => {
         }
     }
 
+    // Product Listing
+
     const productListing = async (req, res) => {
         try {
             const result = await Product.find({ categories: { $in: req.body.product }})

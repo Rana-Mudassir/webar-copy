@@ -30,7 +30,13 @@ app.use(bodyParser.json())
 //     optionSuccessStatus: 200
 // }
 
-app.use(cors());
+const corsOptions= {
+    origin: '*',
+    credentials: true,
+    optionSuccessStatus: 200,
+}
+
+app.use(cors(corsOptions));
 
 app.use('/api/product', Product);
 app.use('/api/categories', Categories);
