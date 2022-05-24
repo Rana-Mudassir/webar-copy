@@ -51,8 +51,9 @@ const Categories = require('../models/Categories');
     // Get single Category by ID
     const getById = async (req, res, next) => {
         try {
+            // console.log(req.query)
             let categoryId = await req.params.id;
-            console.log(categoryId)
+            // console.log(categoryId)
             // console.log(req.query.id)
     
             const response = await Categories.findById(categoryId);
